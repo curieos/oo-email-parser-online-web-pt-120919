@@ -5,10 +5,10 @@
 
 class EmailAddressParser
   def initialize(emails)
-    
+    @emails = emails
   end
   
   def parse
-    addresses = emails.split(",")
+    addresses = @emails.split(",")
   end
 end
