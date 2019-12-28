@@ -9,6 +9,6 @@ class EmailAddressParser
   end
   
   def parse(emails)
-    addresses = emails.split(/,/)
+    addresses = emails.split(".")
   end
 end
