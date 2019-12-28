@@ -10,5 +10,12 @@ class EmailAddressParser
   
   def parse
     addresses = @emails.split(/[\,\s]+/)
+    collection = []
+    addresses.each do |address|
+      if !collection.find(address)
+        collection << address
+      end
+    end
+    collection
   end
 end
